@@ -72,7 +72,9 @@ I saw the "Surf & Turf" color palette from Canva, and I wanted to do something s
 #| label: Data Sampling
 
 sample_data <- function(seed = NULL, n = 100){
-  if(!is.null(seed)) set.seed(seed)
+  if (!is.null(seed)) 
+    set.seed(seed)
+  
   dat <- tibble(
     x0 = runif(n),
     y0 = runif(n),
@@ -89,8 +91,10 @@ sample_data <- function(seed = NULL, n = 100){
 #| label: Canva Sampling
 
 sample_canva <- function(seed = NULL) {
-  if(!is.null(seed)) set.seed(seed)
-  sample(ggthemes::canva_palettes, 1)[[1]]
+  if (!is.null(seed))
+    set.seed(seed)
+  
+  sample(canva_palettes, 1)[[1]]
 }
 ```
 
@@ -134,5 +138,6 @@ polar_styled_plot <- function(data, palette) {
 
 polar_styled_plot(dat, pal)
 ```
+The asterisk, though small and often overlooked, serves as a powerful element in generative art. Its symmetrical shape and repetitive nature make it an ideal candidate for algorithmic manipulation. By varying the placement, orientation, and scale of asterisks, artists can generate an infinite array of designs ranging from delicate, lace-like structures to bold, geometric patterns.
 
 I noticed that a large amount of the generative art utilized polar styled plots. Therefore, I thought it would be interesting to plot something that would utilize segments that had varying angles and lengths to mimic a star. I utilized sampled data to generate the various angles and radii lengths for each of the segments. This is how "StaR" was created (capital R since it was created in R :)).

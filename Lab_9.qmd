@@ -61,9 +61,10 @@ ggplot(
   scale_size(range = c(0, 10)) + 
   theme_void() +
   ggtitle("Seashell Scripts")
-
 ```
-I saw the "Surf & Turf" color palette from Canva, and I wanted to do something surfing or beach themed. I then graphed the points in polar coordinates and noticed that it kind of looked like a seashell. 
+Seashell Scripts features a beautiful arrangement of various seashells, forming a colorful and eye-catching mosaic. The shells' natural shine and texture create a lively and three-dimensional look, showing the beauty and balance of ocean life. 
+
+I saw the "Surf & Turf" color palette from Canva, and I wanted to do something surfing or beach themed. I then graphed the points in polar coordinates and noticed that it kind of looked like a seashell. I then played around with the scales and found this set of arguments to be the best fitting ones. 
 
 ## Generative Art
 

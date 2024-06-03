@@ -37,7 +37,7 @@ surf_clean <- surf |>
 ```
 
 ```{r}
-#| label: Plotting
+#| label: Plotting Art 1
 
 # surf and turf color palette
 palette = c("#F4CC70", "#DE7A22", "#20948B", "#6AB187")
@@ -59,7 +59,7 @@ ggplot(
   scale_colour_gradientn(colours = palette) +
   scale_size(range = c(0, 10)) + 
   theme_void() +
-  ggtitle("Seashell Scripts")
+  labs(title = "Seashell Scripts")
 ```
 
 Seashell Scripts features a beautiful arrangement of various seashells, forming a colorful and eye-catching mosaic. The shells' natural shine and texture create a lively and three-dimensional look, showing the beauty and balance of ocean life. 
@@ -127,14 +127,14 @@ polar_styled_plot <- function(data, palette) {
     coord_equal() +
     theme_void() +
     theme(legend.position = "none") +
-    ggtitle("StaR")
+    labs(title = "StaR")
 
   return(plot + geom_segment(aes(xend = xend, yend = yend), size = 2))
 }
 ```
 
 ```{r}
-#| label: Plotting
+#| label: Plotting Art 2
 
 polar_styled_plot(dat, pal)
 ```
